@@ -20,7 +20,8 @@ import br.ce.wcaquino.taskbackend.utils.ValidationException;
 @RequestMapping(value ="/todo")
 public class TaskController {
 
-	@Autowired
+	@Autowired /*sprint - o valor dessa variável vai ser injetado automaticamente pelo spring quando está 
+	             sendo gerenciada por ele*/
 	private TaskRepo todoRepo;
 	
 	@GetMapping
